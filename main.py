@@ -3,6 +3,7 @@
 a = 10
 b = 20
 c = a + b
+
 print(f'Сумма a + b: {a} + {b} = {c}')          # печать произведения суммы
 
 if a > b:
@@ -12,4 +13,8 @@ elif b > a:
 
 else:
     print(f'a равно b: {a} = {b}')      # печать 10
+
+
+if __name__ == '__main__':
+    print('Hello, World!')
 
