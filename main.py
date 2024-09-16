@@ -13,4 +13,5 @@ def task_writing():
         label.config(text=f'\nВнесите задачу в План\nЗадача записана, можно внести следующую\n')
         save_tasks()  # Сохраняем задачи после добавления новой
 
-
+if __name__ == '__main__':
+    print('Hello, World!')
