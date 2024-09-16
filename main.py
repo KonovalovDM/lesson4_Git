@@ -3,15 +3,18 @@
 a = 10
 b = 20
 c = a + b
-print(c)          # печать произведения суммы
-# Функция добавления задачи в План, которая запускается по нажатию кнопки
-def task_writing():
-    task = entry.get()
-    if task != '':
-        task_listBox.insert(tk.END, task)
-        entry.delete(0, tk.END)
-        label.config(text=f'\nВнесите задачу в План\nЗадача записана, можно внести следующую\n')
-        save_tasks()  # Сохраняем задачи после добавления новой
+
+print(f'Сумма a + b: {a} + {b} = {c}')          # печать произведения суммы
+
+if a > b:
+    print(f'a больше b: {a} > {b}')      # печать 10
+elif b > a:
+    print(f'b больше a: {b} > {a}')      # печать 20
+
+else:
+    print(f'a равно b: {a} = {b}')      # печать 10
+
 
 if __name__ == '__main__':
     print('Hello, World!')
+
